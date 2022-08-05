@@ -60,33 +60,14 @@ if(numberChoice){
   possibleChoices = possibleChoices.concat(numbers)
 
 }
-
+// returns a random password from the possible choices
+var randomPass = "";
 for (let i=0; i<passwordlength; i++){
-   [Math.floor(Math.random(possibleChoices))];
-  console.log(possibleChoices)
-    
-
+  randomPass += possibleChoices[Math.floor(Math.random()*possibleChoices.length)];
+  
+    console.log(randomPass)
 }
-
-// for (let i = 0; i<passwordlength; i++){
-//    Math.floor(Math.random())
-// }
-
-// for(let i = 0; i < length; i += typesCount) {
-//   possibleChoices.forEach(type => {
-//     var funcName = Object.keys(type)[0];
-//     // console.log("funcName: ", funcName);
-
-//     generatePassword += randomFunc[funcName]();
-
-//   });
-
- 
-
-
-
-
-
+return randomPass
 
 }
 
